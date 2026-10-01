@@ -147,7 +147,7 @@ parish_census_portfolio/
 ├── 03_gold_aggregation.ipynb
 ├── 04_report.ipynb
 └── README.md
-
+```
 
 ---
 
@@ -172,7 +172,7 @@ The public version uses simulated data while retaining the underlying engineerin
 Run:
 
 ```text
-00_orchestrator
+00_Notebook_Orchestrator.ipynb
 ```
 
 The orchestrator executes the complete Bronze → Silver → Gold → Report workflow.
