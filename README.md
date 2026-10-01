@@ -123,7 +123,7 @@ The complete workflow can be executed from a single orchestration notebook:
 
 The orchestrator executes each stage sequentially and records pipeline progress and failures through logging.
 
-![Successful pipeline execution](images/orchestrator_run.png)
+![Successful pipeline execution](images/Databricks_pipeline_run_success.png)
 
 ---
 
