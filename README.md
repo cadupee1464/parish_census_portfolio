@@ -89,21 +89,21 @@ Carries out normalization and performs QA checks on the following:
 - Future-dated DOBs
 
 
-**QA result for the portfolio dataset:** `[INSERT RESULT / COUNTS]`
-
+**QA result for the portfolio dataset:**
+![Silver-Layer qa output](images/silver_qa_results.png)
 
 
 ### Gold Layer — Census Metrics
 
 Derives a demographics dimension from person data by calculating age, and creates a contributing-member view from tithing and volunteer data.
 
-![Gold-layer demographics output](images/gold_demographics.png)
+![Gold-layer demographics output](images/gold_mart_sample.png)
 
 ### Reporting
 
 Aggregates demographics by requested age bands, total membership, and contributing membership. Contributing membership is defined at the household level: a household is contributing if at least one member is either tithing or volunteering. 
 
-![Generated parish census report](images/census_report.png)
+![Generated parish census report](images/diocesan_census_report.png)
 
 ---
 
@@ -132,22 +132,22 @@ The orchestrator executes each stage sequentially and records pipeline progress 
 ```text
 parish_census_portfolio/
 │
-├── 00_orchestrator
-├── 01_bronze_ingestion
-├── 02_silver_transformation
-├── 03_gold_aggregation
-├── 04_census_report
+├── images/
+│   └── [SCREENSHOTS]
 │
 ├── sample_data/
 │   └── [ANONYMIZED DATASET]
 │
-├── reports/
+├── sample_report/
 │   └── [SAMPLE REPORT]
 │
+├── 00_Notebook_Orchestrator.ipynb
+├── 01_bronze_ingestion.ipynb
+├── 02_silver_transforms.ipynb
+├── 03_gold_aggregation.ipynb
+├── 04_report.ipynb
 └── README.md
-```
 
-*Update this tree to match the final repository structure.*
 
 ---
 
